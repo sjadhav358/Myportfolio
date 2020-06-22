@@ -15,7 +15,7 @@ html
     height: 100vh;
     background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('img/frontend.jpg');
     background-repeat: no-repeat fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     position: relative;
     
 
