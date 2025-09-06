@@ -17,14 +17,44 @@ html
 {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,158,255,0.3),rgba(0,168,255,0.5)), url('img/frontend.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('img/lee-campbell-DtDlVpy-vvQ-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: 100% 80%	;
     position: relative;
     
 
 }
-@media screen and (max-width:600px))
+#services .card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#services .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+#services h2 span {
+  color: #007bff; /* Bootstrap primary */
+}
+.service-title{
+color: black;
+    font-size: 163%;
+}
+
+ @keyframes slider {
+  0% {
+    background-image: url("img/lee-campbell-DtDlVpy-vvQ-unsplash.jpg");
+  }
+  33% {
+    background-image: url("img/merns.jpg");
+  }
+  66% {
+    background-image: url("img/merns.png");
+  }
+  100% {
+    background-image: url("img/lee-campbell-DtDlVpy-vvQ-unsplash.jpg");
+  }
+}
+@media screen and (max-width:600px)
 {
 	.header
 	{
@@ -79,9 +109,11 @@ a
 {
   width: 100%;
   height: inherit;
-  color: wheat;
+  color: black;
   text-align: center;
   position: relative;
+  font-weight: 400;
+  font-size: x-large;
   
 }
 .center-div
@@ -108,7 +140,7 @@ a
 
 .cards
 {
-    background-color: #10c891;
+    background-color: #e3e3e3;
 }
 h6
 {
@@ -145,6 +177,7 @@ h6
     color: white;    
     font-size: 255;
     font-weight: bolder;
+    transition: 0.5s linear;;
     
 }
 
@@ -245,4 +278,7 @@ body
     font-size: 0.9rem;
     color: #6c757d;
     margin-bottom: 2px;
+  }
+  .nav-item, .nav-link{
+    color: black !important;
   }
